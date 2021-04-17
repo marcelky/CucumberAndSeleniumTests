@@ -1,0 +1,317 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-17T21:21:48.545Z",
+        "line": 6,
+        "name": "Search for a non existent question",
+        "description": "",
+        "id": "test-search-result-in-question-page;search-for-a-non-existent-question",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16679699500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is in the Question page",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.goToQuestionPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 469041200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "types in the search field \"Science: Computers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Science: Computers\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinitions.QuestionSearchSteps.inputSearchInfo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 789923300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks the search button",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1715751500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "an error message is returned with \"No question found.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No question found.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinitions.QuestionSearchSteps.readNoQuestionFound(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Part_1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T21:22:08.360Z",
+        "line": 14,
+        "name": "Search question and the results have pagination control",
+        "description": "",
+        "id": "test-search-result-in-question-page;search-question-and-the-results-have-pagination-control",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6669511200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is in the Question page",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.goToQuestionPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65636300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "types in the search field \"Science: Computers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Science: Computers\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinitions.QuestionSearchSteps.inputSearchInfo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129940700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "select a search option per category",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.select_a_search_option_per_category()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 285654900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks the search button",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16043200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "it is displayed 25 elements in the current page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.QuestionSearchSteps.it_is_displayed_elements_in_the_current_page(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 758132600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "at bottom of page there are other pages buttons and next button",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.at_bottom_of_page_it_appears_more_results_in_other_pages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Part_2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T21:22:16.302Z",
+        "line": 24,
+        "name": "Search question and pagination control does not have previous page \u0027\u003c\u0027",
+        "description": "",
+        "id": "test-search-result-in-question-page;search-question-and-pagination-control-does-not-have-previous-page--\u003c-",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4406402200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user is in the Question page",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.goToQuestionPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 66172900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "types in the search field \"Science: Computers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Science: Computers\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinitions.QuestionSearchSteps.inputSearchInfo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59902100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "select a search option per category",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.select_a_search_option_per_category()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 298154000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user clicks the search button",
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps.clickSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13553600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "it is displayed 25 elements in the current page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.QuestionSearchSteps.it_is_displayed_elements_in_the_current_page(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13509600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "current results is presented at page 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinitions.QuestionSearchSteps.current_results_is_presented_at_page(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6008922500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the previous page \u0027\u003c\u0027 is not displayed before page 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027\u003c\u0027",
+                  "offset": 18
+                },
+                {
+                  "val": "1",
+                  "offset": 51
+                }
+              ],
+              "location": "StepDefinitions.QuestionSearchSteps.the_previous_page_is_not_displayed_before_page(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Part_3"
+          }
+        ]
+      }
+    ],
+    "name": "Test search result in Question page",
+    "description": "",
+    "id": "test-search-result-in-question-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/questionSearch.feature",
+    "tags": []
+  }
+]

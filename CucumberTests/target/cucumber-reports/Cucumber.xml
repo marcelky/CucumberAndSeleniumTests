@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="38.772">
+    <testcase classname="Test search result in Question page" name="Search for a non existent question" time="19.793">
+        <system-out><![CDATA[Given user is in the Question page..........................................passed
+And types in the search field "Science: Computers"..........................passed
+When user clicks the search button..........................................passed
+Then an error message is returned with "No question found.".................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test search result in Question page" name="Search question and the results have pagination control" time="7.929">
+        <system-out><![CDATA[Given user is in the Question page..........................................passed
+And types in the search field "Science: Computers"..........................passed
+And select a search option per category.....................................passed
+When user clicks the search button..........................................passed
+Then it is displayed 25 elements in the current page........................passed
+Then at bottom of page there are other pages buttons and next button........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test search result in Question page" name="Search question and pagination control does not have previous page '&lt;'" time="10.873">
+        <system-out><![CDATA[Given user is in the Question page..........................................passed
+And types in the search field "Science: Computers"..........................passed
+And select a search option per category.....................................passed
+When user clicks the search button..........................................passed
+Then it is displayed 25 elements in the current page........................passed
+Then current results is presented at page 1.................................passed
+Then the previous page '<' is not displayed before page 1...................passed
+]]></system-out>
+    </testcase>
+</testsuite>
