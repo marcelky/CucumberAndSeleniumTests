@@ -3,29 +3,40 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-04-17T21:21:48.545Z",
+        "start_timestamp": "2021-04-23T17:05:52.431Z",
         "line": 6,
         "name": "Search for a non existent question",
         "description": "",
         "id": "test-search-result-in-question-page;search-for-a-non-existent-question",
+        "after": [
+          {
+            "result": {
+              "duration": 647985100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps_POM.quitDriver()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 16679699500,
+              "duration": 3115231700,
               "status": "passed"
             },
             "line": 7,
             "name": "user is in the Question page",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.goToQuestionPage()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.goToQuestionPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 469041200,
+              "duration": 73149800,
               "status": "passed"
             },
             "line": 8,
@@ -37,37 +48,37 @@
                   "offset": 26
                 }
               ],
-              "location": "StepDefinitions.QuestionSearchSteps.inputSearchInfo(java.lang.String)"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.inputSearchInfo(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 789923300,
+              "duration": 315962900,
               "status": "passed"
             },
             "line": 9,
             "name": "user clicks the search button",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.clickSearchButton()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.clickSearchButton()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1715751500,
+              "duration": 14821000,
               "status": "passed"
             },
             "line": 10,
-            "name": "an error message is returned with \"No question found.\"",
+            "name": "an error message is returned with \"No questions found.\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"No question found.\"",
+                  "val": "\"No questions found.\"",
                   "offset": 34
                 }
               ],
-              "location": "StepDefinitions.QuestionSearchSteps.readNoQuestionFound(java.lang.String)"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.readNoQuestionFound(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -79,29 +90,40 @@
         ]
       },
       {
-        "start_timestamp": "2021-04-17T21:22:08.360Z",
+        "start_timestamp": "2021-04-23T17:05:56.668Z",
         "line": 14,
         "name": "Search question and the results have pagination control",
         "description": "",
         "id": "test-search-result-in-question-page;search-question-and-the-results-have-pagination-control",
+        "after": [
+          {
+            "result": {
+              "duration": 660003400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps_POM.quitDriver()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6669511200,
+              "duration": 2495006700,
               "status": "passed"
             },
             "line": 15,
             "name": "user is in the Question page",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.goToQuestionPage()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.goToQuestionPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 65636300,
+              "duration": 66658000,
               "status": "passed"
             },
             "line": 16,
@@ -113,37 +135,37 @@
                   "offset": 26
                 }
               ],
-              "location": "StepDefinitions.QuestionSearchSteps.inputSearchInfo(java.lang.String)"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.inputSearchInfo(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 129940700,
+              "duration": 69993100,
               "status": "passed"
             },
             "line": 17,
             "name": "select a search option per category",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.select_a_search_option_per_category()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.select_a_search_option_per_category()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 285654900,
+              "duration": 283991000,
               "status": "passed"
             },
             "line": 18,
             "name": "user clicks the search button",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.clickSearchButton()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.clickSearchButton()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 16043200,
+              "duration": 13761700,
               "status": "passed"
             },
             "line": 19,
@@ -155,19 +177,19 @@
                   "offset": 16
                 }
               ],
-              "location": "StepDefinitions.QuestionSearchSteps.it_is_displayed_elements_in_the_current_page(int)"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.it_is_displayed_elements_in_the_current_page(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 758132600,
+              "duration": 22230200,
               "status": "passed"
             },
             "line": 20,
             "name": "at bottom of page there are other pages buttons and next button",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.at_bottom_of_page_it_appears_more_results_in_other_pages()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.at_bottom_of_page_it_appears_more_results_in_other_pages()"
             },
             "keyword": "Then "
           }
@@ -179,29 +201,40 @@
         ]
       },
       {
-        "start_timestamp": "2021-04-17T21:22:16.302Z",
+        "start_timestamp": "2021-04-23T17:06:00.291Z",
         "line": 24,
         "name": "Search question and pagination control does not have previous page \u0027\u003c\u0027",
         "description": "",
         "id": "test-search-result-in-question-page;search-question-and-pagination-control-does-not-have-previous-page--\u003c-",
+        "after": [
+          {
+            "result": {
+              "duration": 662133900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.QuestionSearchSteps_POM.quitDriver()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4406402200,
+              "duration": 2814505600,
               "status": "passed"
             },
             "line": 25,
             "name": "user is in the Question page",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.goToQuestionPage()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.goToQuestionPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 66172900,
+              "duration": 66808200,
               "status": "passed"
             },
             "line": 26,
@@ -213,37 +246,37 @@
                   "offset": 26
                 }
               ],
-              "location": "StepDefinitions.QuestionSearchSteps.inputSearchInfo(java.lang.String)"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.inputSearchInfo(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 59902100,
+              "duration": 56747700,
               "status": "passed"
             },
             "line": 27,
             "name": "select a search option per category",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.select_a_search_option_per_category()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.select_a_search_option_per_category()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 298154000,
+              "duration": 367474000,
               "status": "passed"
             },
             "line": 28,
             "name": "user clicks the search button",
             "match": {
-              "location": "StepDefinitions.QuestionSearchSteps.clickSearchButton()"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.clickSearchButton()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 13553600,
+              "duration": 14737900,
               "status": "passed"
             },
             "line": 29,
@@ -255,13 +288,13 @@
                   "offset": 16
                 }
               ],
-              "location": "StepDefinitions.QuestionSearchSteps.it_is_displayed_elements_in_the_current_page(int)"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.it_is_displayed_elements_in_the_current_page(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 13509600,
+              "duration": 11203600,
               "status": "passed"
             },
             "line": 30,
@@ -273,13 +306,13 @@
                   "offset": 37
                 }
               ],
-              "location": "StepDefinitions.QuestionSearchSteps.current_results_is_presented_at_page(java.lang.Integer)"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.current_results_is_presented_at_page(java.lang.Integer)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6008922500,
+              "duration": 15022719000,
               "status": "passed"
             },
             "line": 31,
@@ -295,7 +328,7 @@
                   "offset": 51
                 }
               ],
-              "location": "StepDefinitions.QuestionSearchSteps.the_previous_page_is_not_displayed_before_page(java.lang.String,java.lang.Integer)"
+              "location": "StepDefinitions.QuestionSearchSteps_POM.the_previous_page_is_not_displayed_before_page(java.lang.String,java.lang.Integer)"
             },
             "keyword": "Then "
           }
