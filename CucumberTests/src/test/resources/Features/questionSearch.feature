@@ -1,4 +1,4 @@
-#Author: Marcelo Koiti Yamamoto - marcelky@hotmail.com
+#Author: Marcelo Koiti Yamamoto
 
 Feature: Test search result in Question page
 
@@ -7,7 +7,7 @@ Feature: Test search result in Question page
     Given user is in the Question page
     And types in the search field "Science: Computers"
     When user clicks the search button
-    Then an error message is returned with "No question found."
+    Then an error message is returned with "No questions found."
     
     
   @Part_2
