@@ -17,6 +17,11 @@ continue to exist, but there it only calls the methods defined in the class for 
 tests steps. POM design pattern recommend never include any assertion in the webpage class, in order to separate the webpage interface from test 
 execution.
 
+Additional best practices:
+- Use Webdrivermanager library to handle the different browsers, in this way ther is no need to set path of browsers as resources
+- Avoid use Implicit Wait, because turn each test execution slow
+- Reduce comments along the code it goes against the good practice of clean code 
+
 # Environment
 This project was executed in Windows 10 environemt.
 
